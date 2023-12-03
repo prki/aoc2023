@@ -9,12 +9,12 @@ import (
 func TestParseLine(t *testing.T) {
 	tin := "Game 5: 2 red, 3 blue; 4 green, 10 red, 20 blue"
 	var expectedRnds []CubeGameRound = []CubeGameRound{
-		CubeGameRound{
+		{
 			redCubes:   2,
 			blueCubes:  3,
 			greenCubes: 0,
 		},
-		CubeGameRound{
+		{
 			redCubes:   10,
 			greenCubes: 4,
 			blueCubes:  20,
